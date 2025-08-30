@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1>☁️ Weather App</h1>
+
+        <div class="search-bar">
+            <select id="citySelect">
+                <option value="" disabled selected>Select City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Kerala">Kerala</option>
+            </select>
+            <button id="getWeather">Get Weather</button>
+            <button id="currentLocationBtn">📍 Use Current Location</button>
+        </div>
+
+        <div id="weatherDisplay" class="hidden">
+            <div id="currentWeather" class="card main-card"></div>
+            <div id="forecast" class="forecast-cards"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
